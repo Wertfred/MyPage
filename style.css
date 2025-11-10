@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3ffe4, #fff8e3 88%);
+    margin: 0;
+    padding: 0;
+    color: #323232;
+}
+.card {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fffefe;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(90,130,130,.20);
+    overflow: hidden;
+    padding: 24px 32px;
+    text-align: center;
+    transition: box-shadow .3s;
+}
+.card:hover {
+    box-shadow: 0 12px 48px rgba(90,130,130,.27);
+}
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8fd19e;
+    box-shadow: 0 4px 16px rgba(153, 205, 132, 0.10);
+}
+h1 {
+    font-size: 2.1em;
+    margin: 16px 0 2px 0;
+}
+.job-title {
+    color: #86b143;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contacts {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0;
+}
+.contacts li {
+    margin: 12px 0;
+}
+.contact-link {
+    text-decoration: none;
+    color: #4b7a59;
+    transition: color 0.2s;
+}
+.contact-link:hover {
+    color: #dd7627;
+}
+.about {
+    background: #f5ffe8;
+    border-radius: 10px;
+    padding: 13px 20px;
+    margin: 23px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+.btn-show {
+    display: inline-block;
+    padding: 9px 23px;
+    background: #86d066;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(151,205,129,.07);
+    transition: background 0.25s;
+}
+.btn-show:hover {
+    background: #5da768;
+}
+@media (max-width:500px) {
+    .card {
+        padding: 12px 3vw;
+    }
+    .about {
+        padding: 10px 5vw;
+    }
+}

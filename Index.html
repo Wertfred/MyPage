@@ -1,14 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой учебный проект</title>
+    <title>Визитка</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Тут будет нормальный сайт</h1>
-    <p>Самостоятельно создать структуру сайта: каталоги pages, img, style</p>
-    <p>Создать 3-4 веб-страницы и использованием стилей CSS</p>
-    <p>добавить эффекты и формы JS</p>
+    <div class="card">
+        <img class="avatar" src="./images/avatar.jpg" alt="аватар">
+        <h1>Иван Петров</h1>
+        <div class="job-title">Веб-разработчик</div>
+        <div class="about" id="about-block">
+            Привет! Я занимаюсь созданием современных и адаптивных веб-сайтов. Всегда открыт для новых проектов и сотрудничества.
+        </div>
+        <button class="btn-show" id="toggle-about">Показать больше</button>
+        <ul class="contacts">
+            <li>
+                <a class="contact-link" href="mailto:ivan.petrov@email.com">ivan.petrov@email.com</a>
+            </li>
+            <li>
+                <a class="contact-link" href="tel:+79991234567">+7 (999) 123-45-67</a>
+            </li>
+            <li>
+                <a class="contact-link" href="https://t.me/ivanpetrov" target="_blank">Telegram</a>
+            </li>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
